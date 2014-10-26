@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/iHandyService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/iHandyService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfAreaInCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AreaInCity" nillable="true" type="tns:AreaInCity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAreaInCity" nillable="true" type="tns:ArrayOfAreaInCity" />
+  <xs:complexType name="AreaInCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AreaInCity" nillable="true" type="tns:AreaInCity" />
+  <xs:complexType name="ArrayOfCustomerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerRequest" nillable="true" type="tns:CustomerRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerRequest" nillable="true" type="tns:ArrayOfCustomerRequest" />
+  <xs:complexType name="CustomerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CreatedDateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerAdditionalInfo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerDateTimePrefText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerDayTimePref" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerMobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerRequestFor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerRequest" nillable="true" type="tns:CustomerRequest" />
+</xs:schema>

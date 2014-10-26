@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="iHandy.BUService" CodeBehind="BUService.svc.cs" %>

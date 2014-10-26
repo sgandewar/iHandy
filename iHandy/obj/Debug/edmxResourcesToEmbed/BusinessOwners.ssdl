@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BUOwnerDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BUOwnerDBModelStoreContainer">
+    <EntitySet Name="BusinessOwners" EntityType="BUOwnerDBModel.Store.BusinessOwners" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="BusinessOwners">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Zip" Type="int" />
+    <Property Name="ServicesOffered" Type="nvarchar(max)" />
+    <Property Name="Service Type" Type="nvarchar(max)" />
+    <Property Name="LogoUrl" Type="nvarchar(max)" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HandyBackOfficeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="HandyBackOfficeModelStoreContainer">
+          <EntitySet Name="AreaInCity" EntityType="HandyBackOfficeModel.Store.AreaInCity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="City" EntityType="HandyBackOfficeModel.Store.City" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CustomerRequests" EntityType="HandyBackOfficeModel.Store.CustomerRequests" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="AreaInCity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="CityID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CustomerRequests">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerMobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerRequestFor" Type="nvarchar" MaxLength="20" />
+          <Property Name="CustomerDayTimePref" Type="datetime" />
+          <Property Name="CustomerAdditionalInfo" Type="nvarchar(max)" />
+          <Property Name="CustomerEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="CustomerDateTimePrefText" Type="nvarchar" MaxLength="50" />
+          <Property Name="Area" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="int" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HandyBackOfficeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="HandyBackOfficeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AreaInCities" EntityType="HandyBackOfficeModel.AreaInCity" />
+          <EntitySet Name="Cities" EntityType="HandyBackOfficeModel.City" />
+          <EntitySet Name="CustomerRequests" EntityType="HandyBackOfficeModel.CustomerRequest" />
+        </EntityContainer>
+        <EntityType Name="AreaInCity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CityID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CustomerRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CustomerName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CustomerMobile" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CustomerRequestFor" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CustomerDayTimePref" Precision="3" />
+          <Property Type="String" Name="CustomerAdditionalInfo" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CustomerEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="String" Name="CustomerDateTimePrefText" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Area" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="City" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HandyBackOfficeModelStoreContainer" CdmEntityContainer="HandyBackOfficeEntities">
+          <EntitySetMapping Name="AreaInCities">
+            <EntityTypeMapping TypeName="HandyBackOfficeModel.AreaInCity">
+              <MappingFragment StoreEntitySet="AreaInCity">
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cities">
+            <EntityTypeMapping TypeName="HandyBackOfficeModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerRequests">
+            <EntityTypeMapping TypeName="HandyBackOfficeModel.CustomerRequest">
+              <MappingFragment StoreEntitySet="CustomerRequests">
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="CustomerDateTimePrefText" ColumnName="CustomerDateTimePrefText" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+                <ScalarProperty Name="CustomerAdditionalInfo" ColumnName="CustomerAdditionalInfo" />
+                <ScalarProperty Name="CustomerDayTimePref" ColumnName="CustomerDayTimePref" />
+                <ScalarProperty Name="CustomerRequestFor" ColumnName="CustomerRequestFor" />
+                <ScalarProperty Name="CustomerMobile" ColumnName="CustomerMobile" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

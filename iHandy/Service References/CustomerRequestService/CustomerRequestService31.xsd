@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/CustomerRequestService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/iHandyService" />
+  <xs:element name="AddCustomerRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cmobileno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cemail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="caddinfo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cdatetimepref" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ccity" type="xs:int" />
+        <xs:element minOccurs="0" name="carea" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCustomerRequestResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAreasInCity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAreasInCityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/iHandyService" minOccurs="0" name="GetAreasInCityResult" nillable="true" type="q1:ArrayOfAreaInCity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerRequests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="useremail" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerRequestsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/iHandyService" minOccurs="0" name="GetCustomerRequestsResult" nillable="true" type="q2:ArrayOfCustomerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

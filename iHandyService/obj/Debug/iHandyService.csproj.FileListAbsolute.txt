@@ -1,0 +1,20 @@
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\bin\iHandyService.dll.config
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\bin\iHandyService.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\bin\iHandyService.pdb
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\bin\EntityFramework.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\bin\EntityFramework.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\obj\Debug\iHandyService.csprojResolveAssemblyReference.cache
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\obj\Debug\iHandyService.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandyService\obj\Debug\iHandyService.pdb
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\bin\iHandyService.dll
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\bin\iHandyService.pdb
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\bin\EntityFramework.dll
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\bin\EntityFramework.xml
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\obj\Debug\iHandyService.dll
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\obj\Debug\iHandyService.pdb
+C:\Users\sgandewar\Documents\Visual Studio 2012\Projects\iHandy\iHandyService\obj\Debug\iHandyService.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\iHandyService\bin\iHandyService.dll
+C:\inetpub\wwwroot\iHandyService\bin\iHandyService.pdb
+C:\inetpub\wwwroot\iHandyService\obj\Debug\iHandyService.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\iHandyService\obj\Debug\iHandyService.dll
+C:\inetpub\wwwroot\iHandyService\obj\Debug\iHandyService.pdb

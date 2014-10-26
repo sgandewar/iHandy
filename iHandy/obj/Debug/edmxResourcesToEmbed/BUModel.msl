@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BUModelStoreContainer" CdmEntityContainer="BUEntities">
+    <EntitySetMapping Name="BusinessOwners">
+      <EntityTypeMapping TypeName="BUModel.BusinessOwner">
+        <MappingFragment StoreEntitySet="BusinessOwners">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="ServicesOffered" ColumnName="ServicesOffered" />
+          <ScalarProperty Name="Service_Type" ColumnName="Service Type" />
+          <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,35 @@
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\iHandy.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\iHandy.pdb
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\EntityFramework.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.Edm.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.OData.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.Services.Client.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.Services.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\System.Spatial.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\EntityFramework.xml
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.Edm.xml
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.OData.xml
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.Services.xml
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\Microsoft.Data.Services.Client.xml
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\bin\System.Spatial.xml
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\obj\Debug\iHandy.dll
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\obj\Debug\iHandy.pdb
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\iHandy.dll.config
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\iHandy.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\iHandy.pdb
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\EntityFramework.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.Edm.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.OData.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.Services.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\System.Spatial.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\EntityFramework.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.Edm.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.OData.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.Services.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\bin\System.Spatial.xml
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\obj\Debug\iHandy.csprojResolveAssemblyReference.cache
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\obj\Debug\iHandy.dll
+C:\Users\Pratik Gaikwad\Documents\GitHub\iHandy\iHandy\obj\Debug\iHandy.pdb
+C:\Users\sgandewar\documents\visual studio 2012\Projects\iHandy\iHandy\obj\Debug\iHandy.csprojResolveAssemblyReference.cache

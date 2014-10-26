@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CustomerRequestService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/CustomerRequestService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/CustomerRequestService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/CustomerRequestService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/iHandyService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICustomerRequestService_AddCustomerRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerRequest" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerRequestService_AddCustomerRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerRequestService_GetAreasInCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreasInCity" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerRequestService_GetAreasInCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreasInCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerRequestService_GetCustomerRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerRequests" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerRequestService_GetCustomerRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerRequestsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICustomerRequestService">
+    <wsdl:operation name="AddCustomerRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerRequestService/AddCustomerRequest" message="tns:ICustomerRequestService_AddCustomerRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerRequestService/AddCustomerRequestResponse" message="tns:ICustomerRequestService_AddCustomerRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreasInCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerRequestService/GetAreasInCity" message="tns:ICustomerRequestService_GetAreasInCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerRequestService/GetAreasInCityResponse" message="tns:ICustomerRequestService_GetAreasInCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerRequests">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerRequestService/GetCustomerRequests" message="tns:ICustomerRequestService_GetCustomerRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerRequestService/GetCustomerRequestsResponse" message="tns:ICustomerRequestService_GetCustomerRequests_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="CustomerRequestService" />
+</wsdl:definitions>
