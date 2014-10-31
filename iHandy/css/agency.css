@@ -41,17 +41,18 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+    cursor:pointer;
 }
 
 a {
-    color: #fed136;
+    color: #428bca;
 }
 
     a:hover,
     a:focus,
     a:active,
     a.active {
-        color: #fec503;
+        color: #2a6496;
     }
 
 h1,
@@ -310,7 +311,7 @@ header {
 
     header .intro-text {
         padding-top: 20px;
-        padding-bottom: 150px;
+        padding-bottom: 20px;
     }
 
         header .intro-text .intro-lead-in {
@@ -1076,3 +1077,33 @@ body {
     border-left: 6px solid #fff;
     margin-left: 25px;
 }
+.standardcleaning-box{
+    padding:25px 36px;
+    margin-top:60px;
+    border: 2px solid #dbdcd9;
+}
+.container-bf .booking-sidebar section{
+   
+}
+
+.standardcleaning-box h5{
+    margin:0 0 3px 0;
+    color:#000;
+}
+
+.standardcleaning-box p{
+    margin:0 0 3px 0;
+    font-size: 13px;
+    color:#000;
+}
+
+.standardcleaning-box a{
+    font-size:11px;
+    
+}
+
+.standardcleaning-box .standardcleaning-inner{
+    margin:0 auto;
+    color:#000;
+}
+

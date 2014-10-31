@@ -84,91 +84,133 @@
         <!-- Header -->
         <header>
             <div class="intro-text">
-                <div class="container">
-                    <section class="main-body" style="padding: 30px;">
-                        <div class="row">
-
-                            <div class="col-lg-8">
-                                <h1 style="color: black; font-family: 'Open Sans', sans-serif; font-weight: 300;">Tell us about your home!</h1>
-                                <div class="form-group input-group">
-                                    <span class="form-group input-group-addon"><i class="fa fa-home fa-3"></i></span>
-                                    <select name="" id="bedrooms" class="form-control input-lg">
-                                        <option value="0">0 Bedroom</option>
-                                        <option value="1" selected="selected">1 Bedroom</option>
-                                        <option value="2">2 Bedroom</option>
-                                        <option value="3">3 Bedroom</option>
-                                        <option value="4">4 Bedroom</option>
-                                        <option value="5">5+ Bedroom</option>
-                                    </select>
-                                </div>
-                                <div class="form-group input-group">
-                                    <span class="form-group input-group-addon"><i class="fa fa-user fa-3"></i></span>
-                                    <input id="cname" runat="server" type="text" class="form-control" placeholder="Enter your name" required />
-                                </div>
-
-                                <div class="form-group input-group">
-                                    <span class="input-group-addon"><i class="fa fa-phone-square fa-3"></i></span>
-                                    <input id="cmobileno" runat="server" type="text" class="form-control" placeholder="Enter your mobile number" required />
-                                </div>
-
-                                <div class="form-group input-group">
-                                    <span class="form-group input-group-addon">@</span>
-                                    <input id="cemail" runat="server" type="email" class="form-control" placeholder="E-mail" required />
-                                </div>
-
-
-                                <div class="form-group">
-                                    <div class="input-group date" id="datetimepicker1">
-                                        <input type="text" class="form-control" placeholder="Select date & time" />
-                                        <span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span>
-                                    </div>
-                                </div>
-
-
-
-                                <div class=" form-group input-group">
-                                    <span class="form-group input-group-addon"><i class="fa fa-comments-o"></i></span>
-                                    <textarea id="caddinfo" runat="server" class="form-control" rows="3" placeholder="Additional Info - Size of house, kind of complaint, any other preferneces" required></textarea>
-                                </div>
-                                <div class=" form-group input-group">
-                                    <span class="form-group input-group-addon" style="color:black;">Terms and Conditions</span>
-                                     <input type="checkbox" name="acceptterms" data-size="large" data-on-text="Accept" data-off-text="Decline" style="margin-left:0px;" />
-                                </div>
-
-                                <input type="hidden" id="hdnDateTimePref" runat="server" />
-                                <asp:Button ID="btngetQuote" runat="server" class="btn btn-primary btn-lg" OnClientClick="javascript:sethiddenDatetime()" Text="Get Quote" OnClick="btngetQuote_Click" style="margin-top:30px;"/>
-
+            </div>
+            <div class="container">
+                <section class="main-body" style="padding: 30px;">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1 style="color: black; font-family: 'Open Sans', sans-serif; font-weight: 300;">Tell us about your place!</h1>
+                            <div class="form-group input-group">
+                                <span class="form-group input-group-addon"><i class="fa fa-home fa-3"></i></span>
+                                <select name="" id="bedrooms" class="form-control input-lg">
+                                    <option value="0">0 Bedroom</option>
+                                    <option value="1" selected="selected">1 Bedroom</option>
+                                    <option value="2">2 Bedroom</option>
+                                    <option value="3">3 Bedroom</option>
+                                    <option value="4">4 Bedroom</option>
+                                    <option value="5">5+ Bedroom</option>
+                                </select>
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="form-group input-group-addon"><i class="fa fa-user fa-3"></i></span>
+                                <input id="cname" runat="server" type="text" class="form-control" placeholder="Enter your name" required />
                             </div>
 
-                            <div class="col-lg-4">
-                                <h2 class="section-heading">Pest Control</h2>
-                                <h4 class="section-subheading">Fill this form and selected Pest Control service providers will provide service/treatment for a low quote</h4>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-phone-square fa-3"></i></span>
+                                <input id="cmobileno" runat="server" type="text" class="form-control" placeholder="Enter your mobile number" required />
+                            </div>
 
-                                <div class="col-lg-8"></div>
-                                <div class="col-lg-12">
+                            <div class="form-group input-group">
+                                <span class="form-group input-group-addon">@</span>
+                                <input id="cemail" runat="server" type="email" class="form-control" placeholder="E-mail" required />
+                            </div>
 
 
-                                    <div class="panel panel-green">
-                                        <div class="panel-heading">
-                                            Discount
-                                        </div>
-                                        <div class="panel-body">
-                                            <p>Choose any of the provided quote and get 10% discount on service from HappyHut. </p>
-                                        </div>
-                                        <div class="panel-footer">
-                                           <img src="img/about/10off.jpg" />
-                                        </div>
-                                    </div>
+                            <div class="form-group">
+                                <div class="input-group date" id="datetimepicker1">
+                                    <input type="text" class="form-control" placeholder="Select date & time" />
+                                    <span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span>
                                 </div>
                             </div>
+
+
+                            <div class=" form-group input-group">
+                                <span class="form-group input-group-addon"><i class="fa fa-comments-o"></i></span>
+                                <textarea id="caddinfo" runat="server" class="form-control" rows="3" placeholder="Additional Info - Size of house, kind of complaint, any other preferneces" required></textarea>
+                            </div>
+                            <div class=" form-group input-group">
+                                <span class="form-group input-group-addon" style="color: black;">Terms and Conditions</span>
+                                <input type="checkbox" onchange="javascript:togglebtn(this)" name="acceptterms" data-size="large" data-on-text="Accept" data-off-text="Decline" style="margin-left: 0px;" />
+                            </div>
+
+                            <input type="hidden" id="hdnDateTimePref" runat="server" />
+                            <asp:Button ID="btngetQuote" runat="server" class="btn btn-primary btn-lg" OnClientClick="javascript:sethiddenDatetime();" Text="Get Quote" OnClick="btngetQuote_Click" Style="margin-top: 30px;" />
+
                         </div>
-                    </section>
-                </div>
+
+                        <div class="col-lg-4">
+                            <section class="standardcleaning-box">
+                                <div class="standardcleaning-inner">
+                                    <h5><strong>Standard Pest Control</strong></h5>
+                                    <p>We are dedicated to making your service the best experience possible.</p>
+                                    <a data-toggle="modal" data-target="#standardcleaning-modal" class="pull-right">Learn More</a>
+                                </div>
+                            </section>
+
+                            <section class="standardcleaning-box">
+                                <div class="trust-inner">
+                                    <h5><strong>100% Satisfaction Guarantee</strong></h5>
+                                    <p>We stand behind the quality of our cleaning professionals.  If you're not 100% satisfied with your service, we'll come back and re-do it!</p>
+                                    <a data-toggle="modal" data-target="#satisfaction-modal" class="pull-right">Learn More</a>
+                                </div>
+                            </section>
+
+                            <div class="col-lg-8"></div>
+                            <%--<div class="col-lg-12">
+                                <div class="panel panel-green">
+                                    <div class="panel-heading">
+                                        Discount
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Choose any of the provided quote and get 10% discount on service from HappyHut. </p>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <img src="img/about/10off.jpg" />
+                                    </div>
+                                </div>
+                            </div>--%>
+                        </div>
+                    </div>
+                </section>
             </div>
 
         </header>
 
+        <div class="modal fade" id="standardcleaning-modal" tabindex="-1" role="dialog" aria-labelledby="StandardCleaning" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
 
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Our Standard Pest Control</h4>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="modal fade" id="satisfaction-modal" tabindex="-1" role="dialog" aria-labelledby="Satisfaction" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <section class="satisfaction-section">
+                    <div class="row">
+                        <div class="col-xs-5"><img src="https://s3-us-west-1.amazonaws.com/homejoy/img/booking/US_modal_03.png" alt="" class="img-responsive"></div>
+                        <div class="col-xs-7">
+                            <h2>We aim to please!</h2>
+                            <p>If you are not completely satisfied with your service, we will come back and re-clean for free.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
         <footer>
             <div class="container">
@@ -217,6 +259,7 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="js/agency.js"></script>
+        <script src="js/PestControl.js"></script>
 
         <script src="js/toastr.js"></script>
         <link href="css/toastr.min.css" type="text/css" rel="stylesheet" />
@@ -237,15 +280,14 @@
                 showToday: true,
                 language: 'en'
             });
-            function sethiddenDatetime()
-            {
-            var datetimepref = $('#datetimepicker1').data('DateTimePicker').getDate();
-                var hdnDateTimePref = (datetimepref.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+            function sethiddenDatetime() {
+                var datetimepref = $('#datetimepicker1').data('DateTimePicker').getDate();
+                $('#hdnDateTimePref').val(datetimepref.format("dddd, MMMM Do YYYY, h:mm:ss a"));
             }
 
             function RaiseToast() {
 
-              
+
                 toastr.options = {
                     "closeButton": false,
                     "debug": false,

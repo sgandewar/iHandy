@@ -123,6 +123,7 @@
     <Content Include="js\knockout-3.2.0.js" />
     <Content Include="js\knockout-datatables.js" />
     <Content Include="js\manageappointments.js" />
+    <Content Include="js\PestControl.js" />
     <Content Include="js\toastr.js" />
     <Content Include="PestControl.aspx" />
     <Content Include="img\about\1.jpg" />

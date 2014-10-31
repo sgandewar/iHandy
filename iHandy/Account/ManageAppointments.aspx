@@ -78,7 +78,7 @@
                             </h2>
                         </p>
                     </div>
-                    <div class="row" style="background-color:#81BB47">
+                    <div class="row">
 
                         <h4 class="text-muted text-center">Scheduled Appointments </h4>
 
@@ -90,9 +90,9 @@
                             data-bind="dataTable: { dataSource: addresses, rowTemplate: 'addressGridTemplate',iDisplayLength: 5, sPaginationType: 'bootstrap',	gridId: 'addressGrid', sDom: 't<\'row\'<\'span12\'i><\'span12 paginateRight\'p>>', 	columns: [{'name':'Id' }, {'name':'CustomerRequestFor' },{'name':'Datetime' }]}">
                             <thead>
                                 <tr>
-                                    <th class="text-success">Id</th>
-                                    <th class="text-success">Service</th>
-                                    <th class="text-success">Date/Time</th>
+                                    <th class="text-muted">Id</th>
+                                    <th class="text-muted">Service</th>
+                                    <th class="text-muted">Date/Time</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -104,7 +104,6 @@
                             <td data-bind="text: CustomerRequestFor" class="text-muted"></td>
                             <td data-bind="text: Datetime" class="text-muted"></td>
                              <td><button type="button" class="btn btn-info">Cancel</button></td>
-                            <td><button type="button" class="btn btn-danger">Cancel</button></td>
                         </script>
                         <%--                        <table class="table">
                             <thead>
@@ -186,30 +185,12 @@
 
         $(document).ready(function () {
             jQuery.support.cors = true;
-            //  ko.applyBindings(new customerViewModel());
+           
         });
 
 
-        function customerViewModel() {
-            var self = this;
-            self.customerList = ko.observableArray();
 
 
-            $.ajax({
-                type: 'GET',
-                url: 'http://localhost/CustomerRequestService.svc/Requests/2',
-                success: function (data) {
-                    //var observableData = ko.mapping.fromJS(data);
-                    //var array = observableData();
-                    //self.customerList(array);
-                    self.customerList(ko.toJS(data));
-                },
-                error: function (jq, st, error) {
-                    alert(error);
-                }
-            });
-
-        }
     </script>
 
 
