@@ -4,6 +4,7 @@
     <EntitySet Name="AreaInCity" EntityType="HandyBackOfficeModel.Store.AreaInCity" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="City" EntityType="HandyBackOfficeModel.Store.City" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="CustomerRequests" EntityType="HandyBackOfficeModel.Store.CustomerRequests" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ServiceInArea" EntityType="HandyBackOfficeModel.Store.ServiceInArea" store:Type="Tables" Schema="dbo" />
   </EntityContainer>
   <EntityType Name="AreaInCity">
     <Key>
@@ -35,5 +36,14 @@
     <Property Name="CustomerDateTimePrefText" Type="nvarchar" MaxLength="50" />
     <Property Name="Area" Type="nvarchar" MaxLength="50" />
     <Property Name="City" Type="int" />
+  </EntityType>
+  <EntityType Name="ServiceInArea">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="int" Nullable="false" />
+    <Property Name="AreaID" Type="int" Nullable="false" />
+    <Property Name="ServiceName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="10" />
   </EntityType>
 </Schema>

@@ -217,8 +217,6 @@
                                 <div class="form-group">
                                     <select class="form-control" style="padding-top: 20px;" name="servicepicker" id="servicepicker" placeholder="Service">
                                         <option selected="selected">Choose Service</option>
-                                        <option value="PestControl">Pest Control</option>
-                                        <option value="Plumber">Plumber</option>
                                     </select>
                                 </div>
                             </div>

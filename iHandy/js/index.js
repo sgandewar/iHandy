@@ -18,7 +18,7 @@
                 xhr = $.ajax({
                     url: 'http://localhost/CustomerRequestService.svc/City/' + value,
                     success: function (results) {
-                        select_city.enable();   
+                        select_city.enable();
                         callback(results);
                     },
                     error: function (xhr, status, error) {
@@ -31,21 +31,42 @@
     });
 
     $select_service = $('#servicepicker').selectize({
+        valueField: 'ServiceName',
+        labelField: 'ServiceName',
+        searchField: ['Name'],
         onChange: function (value) {
-          
-            $("#btnBook").attr("href", value+".aspx?Ct="+city+"&loc="+area);
+            $("#btnBook").attr("href", $.trim(value.replace(" ","")) + ".aspx?Ct=" + city + "&loc=" + area);
             $("#btnBook").removeClass("disabled");
+           
         }
+
+
     });
 
     $select_city = $('#area').selectize({
-        valueField: 'Name',
+        valueField: 'ID',
         labelField: 'Name',
         searchField: ['Name'],
         onChange: function (value) {
             if (!value.length) return;
-            area = value;
-            select_service.enable();
+            area = value; if (!value.length) return;
+            selectedservice = value;
+            select_service.disable();
+            select_service.clearOptions();
+            select_service.load(function (callback) {
+                xhr && xhr.abort();
+                xhr = $.ajax({
+                    url: 'http://localhost/CustomerRequestService.svc/area/' + value,
+                    success: function (results) {
+                        select_service.enable();
+                        callback(results);
+                    },
+                    error: function (xhr, status, error) {
+                        var err = eval("(" + xhr.responseText + ")");
+                        alert(err.Message);
+                    }
+                })
+            });
         }
     });
 

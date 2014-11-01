@@ -16,10 +16,13 @@ namespace iHandyService
         [WebInvoke(BodyStyle = WebMessageBodyStyle.Wrapped)]
         void AddCustomerRequest(string cname, string cmobileno, string cemail, string caddinfo, string cdatetimepref, int ccity, string carea);
 
-        
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,UriTemplate  = "City/{id}")]
         List<AreaInCity> GetAreasInCity(string id);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json, UriTemplate = "area/{id}")]
+        List<ServiceInArea> GetServicesInArea(string id);
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json, UriTemplate  = "Requests/{useremail}")]

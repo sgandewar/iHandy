@@ -35,5 +35,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ServiceInAreas">
+      <EntityTypeMapping TypeName="HandyBackOfficeModel.ServiceInArea">
+        <MappingFragment StoreEntitySet="ServiceInArea">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -28,5 +28,6 @@ namespace iHandyService
         public DbSet<AreaInCity> AreaInCities { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<CustomerRequest> CustomerRequests { get; set; }
+        public DbSet<ServiceInArea> ServiceInAreas { get; set; }
     }
 }

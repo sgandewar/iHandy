@@ -45,6 +45,15 @@ namespace iHandyService
             }
         }
 
+        public List<ServiceInArea> GetServicesInArea(string areaid)
+        {
+            int AreadId = Convert.ToInt32(areaid);
+            using (HandyBackOfficeEntities entities = new HandyBackOfficeEntities())
+            {
+                return entities.ServiceInAreas.Where(Service => (Service.AreaID == AreadId) && Service.Active =="True").ToList();
+            }
+        }
+
         public List<CustomerRequest> GetCustomerRequests(string email)
         {
             using (HandyBackOfficeEntities entities = new HandyBackOfficeEntities())

@@ -103,6 +103,9 @@
     </Compile>
     <Compile Include="ICustomerRequestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceInArea.cs">
+      <DependentUpon>CustomerReqModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

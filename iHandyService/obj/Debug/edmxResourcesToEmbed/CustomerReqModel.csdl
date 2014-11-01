@@ -4,6 +4,7 @@
     <EntitySet Name="AreaInCities" EntityType="HandyBackOfficeModel.AreaInCity" />
     <EntitySet Name="Cities" EntityType="HandyBackOfficeModel.City" />
     <EntitySet Name="CustomerRequests" EntityType="HandyBackOfficeModel.CustomerRequest" />
+    <EntitySet Name="ServiceInAreas" EntityType="HandyBackOfficeModel.ServiceInArea" />
   </EntityContainer>
   <EntityType Name="AreaInCity">
     <Key>
@@ -35,5 +36,14 @@
     <Property Type="String" Name="CustomerDateTimePrefText" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="Area" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Type="Int32" Name="City" />
+  </EntityType>
+  <EntityType Name="ServiceInArea">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Type="Int32" Name="ServiceID" Nullable="false" />
+    <Property Type="Int32" Name="AreaID" Nullable="false" />
+    <Property Type="String" Name="ServiceName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

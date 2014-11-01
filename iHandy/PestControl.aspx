@@ -275,39 +275,8 @@
 
         <script type="text/javascript">
 
-            $("[name='acceptterms']").bootstrapSwitch();
-            $('#datetimepicker1').datetimepicker({
-                showToday: true,
-                language: 'en'
-            });
-            function sethiddenDatetime() {
-                var datetimepref = $('#datetimepicker1').data('DateTimePicker').getDate();
-                $('#hdnDateTimePref').val(datetimepref.format("dddd, MMMM Do YYYY, h:mm:ss a"));
-            }
-
-            function RaiseToast() {
-
-
-                toastr.options = {
-                    "closeButton": false,
-                    "debug": false,
-                    "positionClass": "toast-top-center",
-                    "onclick": null,
-                    "showDuration": "300",
-                    "hideDuration": "1000",
-                    "timeOut": "5000",
-                    "extendedTimeOut": "1000",
-                    "showEasing": "swing",
-                    "hideEasing": "linear",
-                    "showMethod": "fadeIn",
-                    "hideMethod": "fadeOut"
-                }
-                toastr.success('Your request is submitted. We will call you with possible lowest quote for requested service');
-                setTimeout(function () {
-                    window.location = "/index.aspx";
-                }, 5000);
-            }
-
+                
+          
         </script>
     </form>
 </body>

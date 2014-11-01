@@ -9,6 +9,7 @@
           <EntitySet Name="AreaInCity" EntityType="HandyBackOfficeModel.Store.AreaInCity" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="City" EntityType="HandyBackOfficeModel.Store.City" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="CustomerRequests" EntityType="HandyBackOfficeModel.Store.CustomerRequests" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ServiceInArea" EntityType="HandyBackOfficeModel.Store.ServiceInArea" store:Type="Tables" Schema="dbo" />
         </EntityContainer>
         <EntityType Name="AreaInCity">
           <Key>
@@ -41,6 +42,15 @@
           <Property Name="Area" Type="nvarchar" MaxLength="50" />
           <Property Name="City" Type="int" />
         </EntityType>
+        <EntityType Name="ServiceInArea">
+          <Key>
+            <PropertyRef Name="ServiceID" />
+          </Key>
+          <Property Name="ServiceID" Type="int" Nullable="false" />
+          <Property Name="AreaID" Type="int" Nullable="false" />
+          <Property Name="ServiceName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -49,6 +59,7 @@
           <EntitySet Name="AreaInCities" EntityType="HandyBackOfficeModel.AreaInCity" />
           <EntitySet Name="Cities" EntityType="HandyBackOfficeModel.City" />
           <EntitySet Name="CustomerRequests" EntityType="HandyBackOfficeModel.CustomerRequest" />
+          <EntitySet Name="ServiceInAreas" EntityType="HandyBackOfficeModel.ServiceInArea" />
         </EntityContainer>
         <EntityType Name="AreaInCity">
           <Key>
@@ -80,6 +91,15 @@
           <Property Type="String" Name="CustomerDateTimePrefText" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Area" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="Int32" Name="City" />
+        </EntityType>
+        <EntityType Name="ServiceInArea">
+          <Key>
+            <PropertyRef Name="ServiceID" />
+          </Key>
+          <Property Type="Int32" Name="ServiceID" Nullable="false" />
+          <Property Type="Int32" Name="AreaID" Nullable="false" />
+          <Property Type="String" Name="ServiceName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -118,6 +138,16 @@
                 <ScalarProperty Name="CustomerMobile" ColumnName="CustomerMobile" />
                 <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServiceInAreas">
+            <EntityTypeMapping TypeName="HandyBackOfficeModel.ServiceInArea">
+              <MappingFragment StoreEntitySet="ServiceInArea">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+                <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+                <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
