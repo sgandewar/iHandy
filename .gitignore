@@ -43,3 +43,8 @@ Temporary Items
 .apdisk
 
 *.dll
+*.zip
+*.cache
+*.user
+*.pdb
+*.pdb

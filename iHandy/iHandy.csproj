@@ -177,6 +177,7 @@
     <Content Include="js\select2.min.js" />
     <Content Include="js\typeahead.js" />
     <Content Include="Account\Web.config" />
+    <None Include="Properties\PublishProfiles\HandyEC2.pubxml" />
     <None Include="Service References\CustomerRequestService\configuration91.svcinfo" />
     <None Include="Service References\CustomerRequestService\configuration.svcinfo" />
     <None Include="Service References\CustomerRequestService\CustomerRequestService1.disco" />
